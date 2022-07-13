@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petmart</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body id="body">
+    <header>
+
+        <a href="#" class="logo"><span>pet </span>mart</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+
+            <a href="#purchase">purchase</a>
+            <a href="#services">Services</a>
+            <a href="#gallary">Gallery</a>
+            <!--<a href="#review">Review</a>-->
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <!-- <i class="fas fa-search" id="search-btn"></i>-->
+            <i class="fas fa-user" id="login-btn"></i>
+            <i class="fas fa-sign-out-alt"></i>
+            <i class="fas fa-bell" id="bell"></i>
+        </div>
+
+        <!--<form action="" class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>-->
+    </header>
+    <div class="dropdown">
+        <div class="box">
+            <a href="">register <i class="fas fa-user-plus"></i></a>
+        </div>
+        <div class="box">
+            <a href="">login <i class="fas fa-sign-in-alt"></i></a>
+        </div>
+    </div>
+    <div class="notification" id="notification">
+        <table class="box">
+            <tr>
+                <th class="box-content">product name</th>
+                <th class="box-content">delivery status</th>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+            <tr>
+                <td class="box-content">product name</td>
+                <td class="box-content">delivery status delivery status</td>
+            </tr>
+        </table>
+
+    </div>
+    <!--home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>until one has loved an animal a part of</h3>
+            <p> one's soul remain unawakened</p>
+
+        </div>
+        <div class="controls">
+            <span class="vid-btn active"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291137/CatVideo1.mp4"></span>
+            <span class="vid-btn src1"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291158/DogVideo1.mp4"></span>
+            <span class="vid-btn src2"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291189/BirdVideo1.mp4"></span>
+            <span class="vid-btn src3"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291131/CatVideo2.mp4"></span>
+            <span class="vid-btn src4"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291215/BirdVideo2.mp4"></span>
+            <span class="vid-btn src5"
+                data-src="https://res.cloudinary.com/fazil/video/upload/v1657291591/DogVideo2.mp4"></span>
+
+        </div>
+        <div class="video-container">
+            <video src="https://res.cloudinary.com/fazil/video/upload/v1657291137/CatVideo1.mp4" id="video-slider" loop
+                autoplay muted></video>
+        </div>
+    </section>
+    <!--book section
+        <section class="book" id="book">
+             <h1 class="heading">
+                 <span>b</span>
+                 <span>o</span>
+                 <span>o</span>
+                 <span>k</span>
+                 <span class="space"></span>
+                 <span>n</span>
+                 <span>o</span>
+                 <span>w</span>
+             </h1>
+             <div class="row">
+                 <div class="image">
+                     <img src="images/book-img.svg" alt="">
+                 </div>
+                 <form action="">
+                     <div class="inputbox">
+                         <h3>where to</h3>
+                         <input type="text" placeholder="place name..">
+                     </div>
+                     <div class="inputbox">
+                        <h3>how many</h3>
+                        <input type="number" placeholder="number of guests">
+                    </div>
+                    <div class="inputbox">
+                        <h3>arrival</h3>
+                        <input type="date" >
+                    </div>
+                    <div class="inputbox">
+                        <h3>leaving</h3>
+                        <input type="date">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                 </form>
+             </div>
+        </section>-->
+    <!--package-->
+    <section class="package" id="purchase">
+        <h1 class="heading"><span>purc</span>hase</h1>
+        <div class="catagory">
+            <span class="btn rad" onclick="currentSlide(1)">dogs</span>
+            <span class="btn rad" onclick="currentSlide(2)">cats</span>
+            <span class="btn rad" onclick="currentSlide(3)">birds</span>
+        </div>
+        <br>
+        <div class="box-container slide">
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289308/AmericanPitbull.jpg" alt="">
+                <div class="content">
+                    <p style="display:none" id="id">101</p>
+                    <h3 class="name">American pitbull</h3>
+                    <p>Strong,Sturdy and Dependable dog for your family</p>
+                    <div class="price"> Rs 69999 </div>
+                    <a class="btn get">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289339/BlueLacy.jpg" alt="">
+                <div class="content">
+                    <p style="display:none" id="id">102</p>
+                    <h3 class="name">Blue Lacy</h3>
+                    <p>moody,affectionate and playful dog for kids</p>
+                    <div class="price"> Rs 7999 <span>Rs 10,000</span> </div>
+                    <a href="book.html" class="btn get">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289617/Poodle.jpg" alt="">
+                <div class="content">
+                    <p style="display:none" id="id">101</p>
+                    <h3 class="name">Poodles</h3>
+                    <p>Poodles time</p>
+                    <div class="price"> Rs 9999 <span>Rs 15,000</span> </div>
+                    <a href="book.html" class="btn get">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289655/Pug.jpg" alt="">
+                <div class="content">
+                    <h3>Pug</h3>
+                    <p>Playful,small and loyal dog for energetic feel</p>
+                    <div class="price"> Rs 8999.99 <span>Rs 12,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289731/Noel.jpg" alt="">
+                <div class="content">
+                    <h3>rajkumar</h3>
+                    <p>hybrid chutiya,one of it's only kind</p>
+
+                    <div class="price"> Rs 69.69 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290932/SmartBoi_wbjfjf.jpg" alt="">
+                <div class="content">
+                    <h3>Smart boi</h3>
+                    <p>very very esmart</p>
+
+                    <div class="price">sorry to say but you cant afford<span>∞</span> </div>
+                    <a href="book.html" class="btn">book in you dreams</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-container slide">
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657289974/AmericanShorthair.webp" alt="">
+                <div class="content">
+                    <h3>american shorthair</h3>
+                    <p>like tejas,short but sexy hair</p>
+                    <div class="price"> Rs 4,999.99 <span>Rs 7,000</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290065/BengalCat.jpg" alt="">
+                <div class="content">
+                    <h3>bengal cat</h3>
+                    <p>cat,but costly</p>
+
+                    <div class="price"> Rs 59,999.99 <span>Rs 100,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290124/BombayCat.jpg" alt="">
+                <div class="content">
+                    <h3>bombay cat</h3>
+                    <p>my favourite dream cat</p>
+
+                    <div class="price"> Rs 7,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290196/PersianCat.jpg" alt="">
+                <div class="content">
+                    <h3>persian cat</h3>
+                    <p>cat that's loved by all</p>
+
+                    <div class="price"> Rs 7,999.99 <span>Rs 10,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290239/RagdollCat.jpg" alt="">
+                <div class="content">
+                    <h3>Ragdoll cat</h3>
+                    <p>fluffy,hairy yet sexy</p>
+
+                    <div class="price"> Rs 13,999.99 <span>Rs 7,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290328/SiameseCat.jpg" alt="">
+                <div class="content">
+                    <h3>Siamese cat</h3>
+                    <p>blue eys,white hair and perfect proportion</p>
+
+                    <div class="price"> Rs 19,999.99 <span>Rs 27,000.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290955/SexyBoi_gqjjwu.jpg" alt="">
+                <div class="content">
+                    <h3>Naughty roys</h3>
+                    <p>just another naughty boi</p>
+
+                    <div class="price"> Rs 69,999.99 <span>Rs 270,000.00</span> </div>
+                    <a href="book.html" class="btn">book on your own risk</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box-container slide">
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290406/CockatielBird.jpg" alt="">
+                <div class="content">
+                    <h3>CockatielBird</h3>
+                    <p>COCK what?</p>
+                    <div class="price"> Rs 8,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+                <div class="offer"><b>offer</b></div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290439/SunConureBird.jpg" alt="">
+                <div class="content">
+                    <h3>sun conure</h3>
+                    <p>Brightens up your moode</p>
+                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290498/FinchBird.jpg" alt="">
+                <div class="content">
+                    <h3>finch bird</h3>
+                    <p>seems more like pokemon-polygon</p>
+                    <div class="price"> Rs 14,999.99<span>Rs 20,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290538/CanaryBird.jpg" alt="">
+                <div class="content">
+                    <h3>canary bird</h3>
+                    <p>Canary,Canary,Canary</p>
+                    <div class="price"> Rs 4,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290582/ParakeetBird.jpg" alt="">
+                <div class="content">
+                    <h3>ParaKeet bird</h3>
+                    <p>just another bird</p>
+                    <div class="price"> Rs 7,999.99<span>Rs 10,000.00</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657290778/PregnantBoi.jpg" alt="">
+                <div class="content">
+                    <h3>Rich kid</h3>
+                    <p>probably he'll buy you</p>
+                    <div class="price"> Rs 999,999.99<span>Rs 999,999,999.99</span> </div>
+                    <a href="bookbird.html" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="services">
+        <h3 class="heading"><span>future</span> services</h3>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-dog"></i>
+                <h3>grooming</h3>
+                <p>grooming is art and practice of cleaning and maintaining parts of the body it is a wonderful act of
+                    keeping your pet healthy </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>health checkup</h3>
+                <p>good health and good sences are two of the pets greatest blessing, to keeep it pet fit a health
+                    checkup is best way to do so </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-crutch"></i>
+                <h3>full vaccination</h3>
+                <p>as the health of the pet is an important aspect for its overall development it is nessary to
+                    completely vaccinated it.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-baseball-ball"></i>
+                <h3>activity zone</h3>
+                <p>there is no growth in comfort zone, there is no comfort in the growth zone, for both growth and
+                    comfort be provide activity zone </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bone"></i>
+                <h3>healthy food</h3>
+                <p>healthy pet is a good pet, to keep it healthy one it to provide enough food that is good and healthy.
+                    we will be providing healthy food to pet </p>
+            </div>
+            <div class="box">
+                <i class="fas fa-capsules"></i>
+                <h3>authorised medicine</h3>
+                <p>when a pet is ill, all it needs is a caring owner and correct medicine, the owner will be caring but
+                    you can trust us with quality medicine</p>
+            </div>
+        </div>
+    </section>
+    <!--gallary-->
+    <section class="gallary" id="gallary">
+        <h1 class="heading"><span>gal</span>lery</h1>
+        <div class="gallery-container">
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289339/BlueLacy.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289339/BlueLacy.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289459/BorderTerrier.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289459/BorderTerrier.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289516/Greenland.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289516/Greenland.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289547/GermanSplitz.gif"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289547/GermanSplitz.gif" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289640/Rottweiler.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289640/Rottweiler.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289655/Pug.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289655/Pug.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289974/AmericanShorthair.webp"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289974/AmericanShorthair.webp" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657290065/BengalCat.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657290065/BengalCat.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657290328/SiameseCat.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657290328/SiameseCat.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657290498/FinchBird.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657290498/FinchBird.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657290979/HornyBoi_bfefwr.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657290979/HornyBoi_bfefwr.jpg" alt=""></a>
+            <a class="box" href="https://res.cloudinary.com/fazil/image/upload/v1657289731/Noel.jpg"><img
+                    src="https://res.cloudinary.com/fazil/image/upload/v1657289731/Noel.jpg" alt=""></a>
+
+            <!-- <div class="box">
+                <img src="pic/readhead-cat-sitting.jpg" id="gal" alt="">
+            </div>-->
+        </div>
+        <!--<section class="slidegal">
+            <div class="bx bx-x" id="close"></div>
+            <img id="expandImg">-->
+
+    </section>
+
+    <!--review
+        <h1 class="heading"><span>client</span> testimonial</h1>
+        <section class="review" id="review">
+
+            <div class="content">
+               <form action="">
+                   <textarea name="" id="" cols="30" rows="10" placeholder="please enter your experience"></textarea><br>
+                   <input type="submit" value="add review" class="btn">
+               </form>
+
+            </div>
+
+            <div class="box-container" >
+
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic1.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic2.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic3.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+                    <div class="user">
+                        <img src="images/pic4.png" alt="">
+                        <div class="info">
+                            <h3>john deo</h3>
+                            <span>designer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <span>contact</span>
+        </div>
+        <div class="row">
+            <div class="map">
+                <img src="https://res.cloudinary.com/fazil/image/upload/v1657295229/location.jpg" alt="">
+            </div>
+            <div class="info">
+                <h3> petmart</h3>
+                <h3>conatact number: +91-9876543210</h3>
+                <h3>email id: petmart@gmail.com,petmart@outlook.com</h3>
+                <h3> location: karnataka,India</h3>
+                <h3> Time 7.0AM - 8.0PM</h3>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>copy&copy; @2022</h3>
+            </div>
+            <div class="box"><a class="terms" href="terms.html">terms & condition</a></div>
+        </div>
+    </section>
+    <script src="script/js.js"></script>
+    <script src="script/user.js"></script>
+    <script src="script/order.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.querySelector('.gallary .gallery-container'));
+    </script>
+
+</body>
+
+</html>
